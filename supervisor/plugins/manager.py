@@ -31,7 +31,7 @@ class PluginManager(CoreSysAttributes):
     @property
     def all_plugins(self) -> list[PluginBase]:
         """Return cli handler."""
-        return [self._cli, self._dns, self._audio, self._observer, self._multicast]
+        return [self._cli, self._observer]
 
     @property
     def cli(self) -> PluginCli:
