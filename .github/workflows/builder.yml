@@ -18,19 +18,9 @@ on:
         description: "Stable"
         required: true
         default: "false"
-  pull_request:
-    branches: ["main"]
   release:
     types: ["published"]
-  push:
-    branches: ["main"]
-    paths:
-      - "rootfs/**"
-      - "supervisor/**"
-      - build.json
-      - Dockerfile
-      - requirements.txt
-      - setup.py
+
 
 env:
   BUILD_NAME: supervisor
